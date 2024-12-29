@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Lesson no.28</title>
+    </head>
+    <body>
+        <h2>Javascript array sort</h2>
+        <button onclick="ascending()">ascending order</button>
+        <button onclick="descending()">descending order</button>
+        <p id="result"></p>
+        <script>
+        var points =[7,86,56,3,77,20];
+        document.getElementById("result").innerHTML= points;
+        function ascending(){
+            points.sort(function(a, b){return(a-b)})
+            document.getElementById("result").innerHTML = points;
+        }   
+        function descending() {
+                points.sort(function (a, b) { return (b - a) })
+                document.getElementById("result").innerHTML = points;
+        }
+        </script>
+    </body>
+</html>
